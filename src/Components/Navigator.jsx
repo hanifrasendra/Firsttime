@@ -1,4 +1,4 @@
-
+import Stiker02 from 'public/STIKER-02 2.png';
 
 const Navigator = () => {
     return (
@@ -6,7 +6,7 @@ const Navigator = () => {
             <div className={"flex justify-between w-full px-[2%] mx-[clamp(16px,14vw,250px)] bg-[rgba(255,255,255,1)] h-[88px] [@media(width<=1536px)]:h-[66px] rounded-[15px] shadow-[4px_4px_10px_0px_rgba(0,0,0,0.25)]"}>
                 <div className={"flex gap-[30%] items-center w-[153px]"}>
                     <div>
-                        <img src="public/STIKER-02 2.png" alt="" className={"h-[62px]"}/>
+                        <img src={Stiker02} alt="" className={"h-[62px]"}/>
                     </div>
                     
                     <div className={"border-2 border-[rgba(66,184,115,1)] h-[70%]"}>
