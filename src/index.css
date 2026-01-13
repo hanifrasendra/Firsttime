@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@theme {
+  /* CUSTOM BREAKPOINTS UNTUK ANDA */
+  --breakpoint-upto-3xl: 1920px;                    /* ≥ 1920px */
+  --breakpoint-upto-2xl: 1537px;               /* ≤ 1536px */
+  --breakpoint-upto-xl: 1280px;                /* ≤ 1280px */
+  --breakpoint-upto-lg: 1024px;                /* ≤ 1024px */
+  --breakpoint-mobile: 768px;                  /* ≤ 768px */
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
