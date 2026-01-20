@@ -99,8 +99,8 @@ const Solution = () => {
     ];
 
     return (
-        <div ref={sectionRef}>
-            <h1 className="text-[clamp(48px,6vw,96px)] text-[rgba(0,121,79,1)] text-center mt-[86px] font-bold px-4">
+        <div ref={sectionRef} id="solution">
+            <h1 className="text-[96px] [@media(1200px<width<=1536px)]:text-[64px] [@media(width<=1200px)]:text-[48px]  text-[rgba(0,121,79,1)] text-center mt-[86px] font-bold px-4">
                 Kenapa <span className="italic">Firsttime Design</span> ?
             </h1>
             
@@ -115,7 +115,7 @@ const Solution = () => {
                             ${index % 2 === 1 ? 'md:pl-[25%]' : ''} 
                             ${index % 2 === 0 ? 'bg-[rgba(0,121,79,1)]' : 'bg-[rgba(66,184,115,1)]'} 
                             ${index % 2 === 0 ? 'rounded-[0px_50px_50px_0px] md:mr-[clamp(16px,14vw,250px)]' : ''}
-                            min-h-[150px] md:h-[249px]
+                            h-[249px] [@media(1200px<width<=1536px)]:h-[190px] [@media(width<=1200px)]:h-[111px]
                             transition-all duration-700 ease-out
                             hover:scale-y-[1.05] hover:shadow-2xl
                             ${visibleItems.includes(index) 
@@ -123,7 +123,7 @@ const Solution = () => {
                                 : index % 2 === 0 
                                     ? 'opacity-0 -translate-x-24' 
                                     : 'opacity-0 translate-x-24'
-                            }
+                            }   
                         `}
                         style={{ 
                             transitionDelay: visibleItems.includes(index) ? `${index * 150}ms` : '0ms',
@@ -132,7 +132,7 @@ const Solution = () => {
                         <p className={`
                             ${index % 2 === 0 ? 'mx-[clamp(16px,8vw,250px)]' : ''} 
                             text-[rgba(238,238,238,1)] 
-                            text-[clamp(20px,3.5vw,53.99px)] 
+                            text-[53.99px] [@media(1200px<width<=1536px)]:text-[35.99px] [@media(width<=1200px)]:text-[23.99px] 
                             w-[676px]
                             font-bold italic 
                             leading-tight
